@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="fr">
+  <head>
+    <!-- Document Meta-->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- IE Compatibility Meta-->
+    <meta name="author" content="zytheme"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="description" content="Multi-purpose Business html5 landing page"/>
+    <link href="assets/images/favicon/favicon.png" rel="icon"/>
+    <!--  Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;display=swap" rel="stylesheet" type="text/css"/>
+    <!-- Stylesheets-->
+    <link href="assets/css/vendor.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <!-- 
+    Document Title
+    ============================================= 
+    -->
+    <title>L'espace client | FIPARCO</title>
+  </head>
+  <body class="body-scroll">
+    <!--  
+    Document Wrapper
+    =============================================  
+    -->
+    <div class="wrapper clearfix" id="wrapper">
+      <!--   
+      Header
+      =============================================  
+      -->
+      <header class="header header-transparent header-sticky">
+        <nav class="navbar navbar-sticky navbar-expand-lg" id="primary-menu"> 
+          <div class="container"> <a class="logo navbar-brand" href="index.html"><img class="logo logo-dark" src="assets/images/logo/logo-01.png"  width="50%" alt="Fiparco CRM"/><img class="logo logo-light"  width="50%"src="assets/images/logo/logo-01.png" alt="Fiparco CRM"/></a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarContent">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" data-scroll="scrollTo" href="#hero">Acceuil</a></li>
+                <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#feature">A Propos</a></li>
+                <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#video">CRM Client </a></li>
+                <li class="nav-item"><a class="nav-link" data-scroll="scrollTo" href="#footer">Contact</a></li>
+              </ul>
+              <div class="module-container">
+                <!--module-btn-->
+                <div class="module module-cta"><a class="btn btn--white btn--arrows" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"> <span>S'inscrire<i class="icon-right-arrow"></i></span></a></div>
+              </div>
+              <!-- End Module Container  -->
+            </div>
+            <!-- End .nav-collapse-->
+          </div>
+          <!-- End .container-->
+        </nav>
+        <!-- End .navbar-->
+      </header>
+      <!-- End Header-->
+      <div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <div class="popup-contact-form">
+                <div class="heading heading-5">
+                  <div class="heading-title">Rejoindre</div>
+                  <div class="heading-desc">L'espace client | FIPARCO</div>
+                </div>
+                <div class="contact-body">
+                  <form class="contactForm mb-0" method="post" action="/assets/php/contact.php">
+                    <div class="row">
+                      <div class="col-12">
+                        <input class="form-control" type="text" name="contact-name" placeholder="Nom" required="required"/>
+                      </div>
+                      <div class="col-12">
+                        <input class="form-control" type="text" name="contact-email" placeholder="Email" required="required"/>
+                      </div>
+                      <div class="col-12">
+                        <input class="form-control" type="text" name="contact-phone" placeholder="Téléphone" required="required"/>
+                      </div>
+                      <div class="col-12">
+                        <button class="btn--block btn btn--primary btn--arrows mt-20 mb-20"><span>Se Connecter<i class="icon-right-arrow"></i></span></button>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" value="" class="mr-2"> J'ai lu et j'accepte les conditions générales</label>
+                     </div>
+                      <div class="col-12">
+                        <div class="contact-result"></div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- End .contact-body-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start hero #1-->
+      <section class="hero bg-gradient" id="hero">
+        <div class="bg-section"><img src="assets/images/background/bg-gradient.svg" alt="background"/></div>
+        <div class="container">
+          <div class="hero-cotainer text-center text-lg-left">
+            <div class="row">
+              <div class="col-12 col-lg-6">
+                <div class="hero-content">
+                  <div class="hero-headline">FIPARCO ESPACE CLIENT</div>
+                  <div class="hero-bio">Obtenez des prévisions précises Utilisez des données concrètes afin de prendre les meilleures décisions. </div>
+                  <div class="hero-action"><a class="btn btn--primary btn--rounded btn--arrows mx-auto" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"><span>Démarrez maintenant <i class="icon-right-arrow"></i></span></a></div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6">
+                <div class="hero--img"><img class="img-fluid" src="assets/images/illustration/illustration-1.png" alt="illustration vector"/></div>
+              </div>
+            </div>
+            <!-- End .row-->
+          </div>
+          <!-- End .hero-content-->
+        </div>
+        <!-- End .container	-->
+      </section>
+      <!-- End #hero   -->
+      <!-- Start Feature #1-->
+      <section class="features " id="feature">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <div class="heading heading-1 text-center">
+                <h2 class="heading-title">Pour connaître nos services</h2>
+                <p class="heading-desc">Obtenez toutes les informations dont vous avez besoin pour développer votre activité.</p>
+              </div>
+            </div>
+            <!-- End .col-lg-6 -->
+          </div>
+          <!-- End .row  -->
+          <div class="row">
+            <!-- Panel #1  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel">
+                <div class="feature-icon"><i class="flaticon-archive-3"></i></div>
+                <div class="feature-content">
+                  <h3>Gestion de portefeuille</h3>
+                  <p>Gérez vos portefeuilles en quelques clics.</p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+            <!-- Panel #2  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel active">
+                <div class="feature-icon"><i class="flaticon-file"></i></div>
+                <div class="feature-content">
+                  <h3>Gestion de données</h3>
+                  <p>Gérer vos données en toute sécurité.
+                  </p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+            <!-- Panel #3  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel">
+                <div class="feature-icon"><i class="flaticon-controls"></i></div>
+                <div class="feature-content">
+                  <h3>Simulateur
+                  </h3>
+                  <p>Effectuer des simulations et des estimations dans le même logiciel</p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+          </div>
+          <!-- End .row  -->
+        </div>
+        <!-- End .container  -->
+      </section>
+      <!-- 
+      Pricing Table #1
+      =============================================  
+      -->
+      <section class="pricing bg-pink" id="services">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <div class="heading heading-1 text-center">
+                <h2 class="heading-title">UN APERÇU EN  <span>TEMPS RÉEL</span></h2>
+                <p class="heading-desc">Passez facilement vos performances et vos prochaines activités en revue.Suivez vos performances en temps réel et comparez-les à vos objectifs mensuels.</p>
+              </div>
+            </div>
+            <!-- End .col-lg-6  -->
+          </div>
+          <!-- End .row-->
+          <div class="pricing-container">
+            <div class="row">
+              <!-- Start Pricing Packge #1 -->
+              <div class="col-12 col-md-4 col-lg-4 price-table">
+                <div class="pricing-panel ">
+                  <!--  Pricing heading   -->
+                  <div class="pricing-img"><img src="assets/images/illustration/illustration-2.png" alt="alt"/></div>
+                  <!--  Pricing body-->
+                  <div class="pricing-body">
+                    <h5 class="pricing-heading">Vendez plus rapidement (Fiparco CRM)</h5>
+                    <p class="pricing-desc">Un tableau de bord permettant une meilleure vue d’ensemble des activités commerciales et administratives.</p><a class="pricing-link" href="javascript:void(0)"><i class="icon-right-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End .pricing-table  -->
+              <!-- Start Pricing Packge #2-->
+              <div class="col-12 col-md-4 col-lg-4 price-table">
+                <div class="pricing-panel ">
+                  <!--  Pricing heading   -->
+                  <div class="pricing-img"><img src="assets/images/illustration/illustration-3.png" alt="alt"/></div>
+                  <!--  Pricing body-->
+                  <div class="pricing-body">
+                    <h5 class="pricing-heading">Restez connecté</h5>
+                    <p class="pricing-desc">Obtenez un aperçu rapide de ce qui se passe dans votre équipe. Voyez quand un collègue enregistre un appel ou envoie un devis.</p><a class="pricing-link" href="javascript:void(0)"><i class="icon-right-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End .pricing-table  -->
+              <!-- Start Pricing Packge #3-->
+              <div class="col-12 col-md-4 col-lg-4 price-table">
+                <div class="pricing-panel ">
+                  <!--  Pricing heading   -->
+                  <div class="pricing-img"><img src="assets/images/illustration/illustration-4.png" alt="alt"/></div>
+                  <!--  Pricing body-->
+                  <div class="pricing-body">
+                    <h5 class="pricing-heading">un suivi efficace de vos contacts</h5>
+                    <p class="pricing-desc">Planifiez vos tâches et vos rendez-vous, et recevez des alertes par e-mail pour vous les rappeler.</p><a class="pricing-link" href="javascript:void(0)"><i class="icon-right-arrow"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- End .pricing-table  -->
+            </div>
+          </div>
+          <!-- End .pricing-container-->
+        </div>
+        <!-- End .container  -->
+      </section>
+      <!-- #pricing1 end  -->
+      <section class="services" id="video">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-7">
+              <div class="video">
+                <div class="bg-section"><img src="assets/images/background/bg-video.svg" alt="background"/></div><a class="btn-video popup-video" href="#"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-5">
+              <div class="service-card pt-30">
+                <div class="heading heading-2">
+                  <h2 class="heading-title">Votre CRM
+                    nouvelle génération <br> De Fiparco </h2>
+                  <p class="heading-desc">Améliorez vos performances commerciales et augmentez votre chiffre d’affaires avec notre application CRM pour commerciaux.</p>
+                </div>
+                <ul class="list-unstyled service-list">
+                  <li><span class="icon-tick-inside-circle"></span>Votre tableau de bord personnalisable</li>
+                  <li><span class="icon-tick-inside-circle"></span> Flux d'activité : rapports de visite, appels, mises à jour de contacts
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Start Services-->
+      <section class="features " id="feature">
+        <div class="container">
+          <div class="row clearfix">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+              <div class="heading heading-1 text-center">
+                <h2 class="heading-title">Pour connaître nos services</h2>
+                <p class="heading-desc">Obtenez toutes les informations dont vous avez besoin pour développer votre activité.</p>
+              </div>
+            </div>
+            <!-- End .col-lg-6 -->
+          </div>
+          <!-- End .row  -->
+          <div class="row">
+            <!-- Panel #1  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel">
+                <div class="feature-icon"><i class="flaticon-file-2"></i></div>
+                <div class="feature-content">
+                  <h3>Comptabilité</h3>
+                  <p>Gérez vos portefeuilles en quelques clics.</p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+            <!-- Panel #2  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel active">
+                <div class="feature-icon"><i class="flaticon-eyeglasses"></i></div>
+                <div class="feature-content">
+                  <h3>Conseil juridique</h3>
+                  <p>Gérer vos données en toute sécurité.
+                  </p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+            <!-- Panel #3  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel">
+                <div class="feature-icon"><i class="flaticon-controls"></i></div>
+                <div class="feature-content">
+                  <h3>Crédit Impôt Recherche (CIR)
+                  </h3>
+                  <p>Effectuer des simulations et des estimations dans le même logiciel</p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+          </div>
+      
+          <!-- End .row  -->
+          <div class="row">
+            <!-- Panel #1  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel">
+                <div class="feature-icon"><i class="flaticon-folder-3"></i></div>
+                <div class="feature-content">
+                  <h3>Visa Fiscal</h3>
+                  <p>Gérez vos portefeuilles en quelques clics.</p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+            <!-- Panel #2  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel active">
+                <div class="feature-icon"><i class="flaticon-flag"></i></div>
+                <div class="feature-content">
+                  <h3>Création d’entreprise</h3>
+                  <p>Gérer vos données en toute sécurité.
+                  </p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+            <!-- Panel #3  -->
+            <div class="col-12 col-md-12 col-lg-4 ">
+              <div class="feature-panel">
+                <div class="feature-icon"><i class="flaticon-document"></i></div>
+                <div class="feature-content">
+                  <h3>Fiscalité
+                  </h3>
+                  <p>Effectuer des simulations et des estimations dans le même logiciel</p>
+                </div>
+              </div>
+              <!-- .feature-panel end  -->
+            </div>
+            <!-- .col-md-12 end  -->
+          </div>
+          <!-- End .row  -->
+        </div>
+        <!-- End .container  -->
+      </section>
+      <!-- Start Clients-->
+      <section class="clients bg-pink" id="clients" >
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+              <div class="owl-carousel " data-slide="5" data-slide-res="3" data-autoplay="true" data-nav="false" data-dots="false" data-space="30" data-loop="true" data-speed="800" >
+                <!--  Client #1   -->
+                <div class="client"><img src="assets/images/clients/client-1.png"   alt="client-pic"/></div>
+                <!--  Client #2   -->
+                <div class="client"><img src="assets/images/clients/client-2.png"   alt="client-pic"/></div>
+                <!--  Client #3-->
+                <div class="client"><img src="assets/images/clients/client-3.png"  alt="client-pic"/></div>
+                <!--  Client #4-->
+                <div class="client"><img src="assets/images/clients/client-4.png"  alt="client-pic"/></div>
+                <!--  Client #5-->
+              </div>
+            </div>
+            <!-- End .row-->
+          </div>
+        </div>
+        <!-- End .container-->
+      </section>
+      <!-- End #clients-->
+      <!-- 
+      CTA #1
+      =============================================  
+      -->
+      <section class="cta text-center" id="cta">
+        <div class="bg-section"><img src="assets/images/background/bg-gradient-2.svg" alt="background"/></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 offset-md-2 col-lg-8 offset-lg-2 text-center">
+              <h3>Qu'est-ce que vous attendez ?</h3>
+              <p>Pilotez l’activité commerciale de l’entreprise et ne perdez plus jamais d’opportunités d’affaires.</p><a class="btn btn--primary btn--arrows mx-auto" href="javascript:void(0)" data-toggle="modal" data-target="#contactUsModal"> <span>S'inscrire <i class="icon-right-arrow"></i></span></a>
+            </div>
+            <!-- End .col-md-12-->
+          </div>
+          <!-- End .row-->
+        </div>
+        <!-- End .container-->
+      </section>
+      <!-- End #cta-->
+      <!-- 
+      Footer #1
+      ============================================= 
+      -->
+      <footer class="footer bg-pink" id="footer">
+        <div class="footer-widgets-container">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="footer-widget"><a class="logo navbar-brand" href="index.html"><img class="logo logo-light" src="assets/images/logo/logo-01.png"  width="50%" alt="Fiparco CRM Logo"/></a>
+                  <ul class="list-unstyled navigation">
+                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Acceuil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">A propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">CRM</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">Mentions Légales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript:void(0)">contact us</a></li>
+                  </ul>
+                </div>
+                <div class="footer-widget">
+                  <div class="footer-contact">
+                    <ul class="list-unstyled">
+                      <li> <a href="mailto:jc.tic@fiparco.fr">	jc.tic@fiparco.fr</a></li>
+                      <li> <a href="tel:+33184793480">	+33 1 84 79 34 80</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="divider-1"></div>
+        </div>
+        <!-- 
+        Copyrights
+        =============================================  
+        -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-12 col-lg-12 text--center">
+              <div class="footer-copyright"><span>2020 &copy; <a href="#">Fiparco CRM.</a> Tous droits réservés.</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- End .container  -->
+      </footer>
+    </div>
+    <!-- End #wrapper   -->
+    <!-- 
+    Footer Scripts
+    =============================================  
+    -->
+    <script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/functions.js"></script>
+  </body>
+</html>
